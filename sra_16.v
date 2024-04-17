@@ -1,0 +1,40 @@
+module sra_16(data, out);
+    input [31:0] data;
+    output [31:0] out;
+
+    wire MSB;
+    assign MSB = data[31];
+
+    assign out[31] = MSB;
+    assign out[30] = MSB;
+    assign out[29] = MSB;
+    assign out[28] = MSB;
+    assign out[27] = MSB;
+    assign out[26] = MSB;
+    assign out[25] = MSB;
+    assign out[24] = MSB;
+    assign out[23] = MSB;
+    assign out[22] = MSB;
+    assign out[21] = MSB;
+    assign out[20] = MSB;
+    assign out[19] = MSB;
+    assign out[18] = MSB;
+    assign out[17] = MSB;
+    assign out[16] = MSB;
+    assign out[15] = data[31];
+    assign out[14] = data[30];
+    assign out[13] = data[29];
+    assign out[12] = data[28];
+    assign out[11] = data[27];
+    assign out[10] = data[26];
+    assign out[9] = data[25];
+    assign out[8] = data[24];
+    assign out[7] = data[23];
+    assign out[6] = data[22];
+    assign out[5] = data[21];
+    assign out[4] = data[20];
+    assign out[3] = data[19];
+    assign out[2] = data[18];
+    assign out[1] = data[17];
+    assign out[0] = data[16];
+endmodule
